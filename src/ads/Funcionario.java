@@ -19,4 +19,7 @@ public class Funcionario {
 		return salario;
 	}
 
+	public double getSalarioComDesconto() {
+		return cargo.getRegra().calcula(this);
+	}
 }
